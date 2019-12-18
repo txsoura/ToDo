@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-    'middleware' => ['api','cors']
+    'middleware' => ['api']
 ], function ($router) {
     Route::apiResource('task', 'TasksController');
 });
